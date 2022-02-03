@@ -1,11 +1,24 @@
 <template>
   <div>
-    <h1>nuxt blog </h1>
+    <el-row type="flex" justify="center">
+      <el-col :xs="24" :sm="20" :md="14" :lg="12">
+        <app-post 
+          v-for="post in 3"
+          :key="post"
+        />
+      </el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
+import AppPost from '@/components/main/Post'
 export default {
-  name: 'IndexPage'
+  head: {
+    title: 'Главная'
+  },
+  components: {
+    AppPost
+  }
 }
 </script>
