@@ -55,5 +55,9 @@ export default {
   */
   serverMiddleware: {
     '/api': '~/api'
+  },
+  loading: {
+    color: 'black',
+    height: '5px'
   }
 }

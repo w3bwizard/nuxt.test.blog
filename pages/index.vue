@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row type="flex" justify="center">
-      <el-col :xs="24" :sm="20" :md="14" :lg="12">
+      <el-col :xs="24" :sm="18" :md="12" :lg="10">
         <app-post 
           v-for="post in 3"
           :key="post"
