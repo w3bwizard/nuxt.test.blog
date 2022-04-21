@@ -10,7 +10,9 @@
       >
     </header>
     <div class="post__poster">
-      <img class="post__img" src="http://cheats-by-cs.ru/_ld/0/61.jpg" />
+      <a href="/post/" @click.prevent="openPost()"
+        ><img class="post__img" src="http://cheats-by-cs.ru/_ld/0/61.jpg"
+      /></a>
     </div>
 
     <div style="padding: 14px">
@@ -66,6 +68,10 @@ export default {
 .post__poster {
   display: flex;
   padding-top: 1rem;
+  a {
+    display: block;
+    margin: 0 auto;
+  }
 }
 .post__img {
   margin: auto;

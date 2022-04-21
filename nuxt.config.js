@@ -59,5 +59,6 @@ export default {
   loading: {
     color: 'black',
     height: '5px'
-  }
+  },
+  target: 'static'
 }
